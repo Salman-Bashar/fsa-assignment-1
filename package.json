@@ -1,0 +1,19 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "Make an algorithm live using REST API",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salman Bashar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
