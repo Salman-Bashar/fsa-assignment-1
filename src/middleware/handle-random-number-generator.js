@@ -19,7 +19,7 @@ export const handleRandomNumberGenerator = (req, res) => {
         `A random number between ${startNumber} & ${endNumber} is ${result}`
       )
     } else {
-      res.json(`Please provide valid numbers`)
+      res.json(`Please provide two numbers`)
     }
   } catch {
     res

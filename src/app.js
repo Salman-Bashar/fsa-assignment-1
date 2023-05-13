@@ -25,7 +25,7 @@ app.get("/api/v1/generate-fake-person", (req, res) => {
 })
 
 /**
- * Count AString Stats
+ * Count String Stats
  */
 app.get("/api/v1/count-string-stats", (req, res) => {
   handleStringStatsCounter(req, res)
