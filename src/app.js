@@ -1,5 +1,6 @@
 import express from "express"
-import { handleGenerateRandomNumber } from "./middleware/handle-generate-random-number.js"
+import { handleRandomNumberGenerator } from "./middleware/handle-random-number-generator.js"
+import { handleFakePersonGenerator } from "./middleware/handle-fake-person-generator.js"
 
 const app = express()
 const PORT = 4000
@@ -12,5 +13,12 @@ app.listen(PORT, () => {
  * Generate Random Number
  */
 app.get("/api/v1/generate-random-number", (req, res) => {
-  handleGenerateRandomNumber(req, res)
+  handleRandomNumberGenerator(req, res)
+})
+
+/**
+ * Generate Fake Person
+ */
+app.get("/api/v1/generate-fake-person", (req, res) => {
+  handleFakePersonGenerator(req, res)
 })

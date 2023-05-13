@@ -1,6 +1,6 @@
 import { generateRandomNumber } from "../generate-random-number.js"
 
-export const handleGenerateRandomNumber = (req, res) => {
+export const handleRandomNumberGenerator = (req, res) => {
   try {
     let startNumber, endNumber, result
 
